@@ -1,0 +1,76 @@
+  /* #map {
+    width: 200vh;
+    height: 200vh;
+    position: absolute;
+} */
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+#map { position: absolute; top: 0; bottom: 0; width: 50%; }
+
+.mapboxgl-marker {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid gray;
+    background-color:lightblue;
+}
+
+.mapboxgl-marker:hover {
+    cursor: pointer;
+  }
+
+  .mapboxgl-marker:hover svg > g > g:nth-child(2) {
+    fill: green;
+  }
+ 
+ 
+  
+  /**
+  * Set rules for how the map overlays
+  * (information box and legend) will be displayed
+  * on the page. */
+  .map-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+  
+    border-radius: 3px;
+  }
+
+  h5{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: darkgreen;
+    padding: 0px;
+    font-size: 15px;
+  }
+ 
+  
+  #legend {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 18px;
+    height: 100px;
+    margin-bottom: 40px;
+    width: 100px;
+  }
+  
+  .legend-key {
+    display: inline-block;
+    border-radius: 10%;
+    margin: 2px;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
+
+ 
+ 

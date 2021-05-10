@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="Token.js"> </script>
+    <script src="script.js" defer> </script>
+
+</head>
+
+<body>
+
+
+    <div id='map'></div>
+ 
+   
+    <!-- <div class='map-overlay' id='legend'></div>     -->
+     
+    
+    <div class='map-overlay' id='legend'>  
+    <h5>POPULATION</h4>
+    <div><span class='legend-key' style="background-color: grey"></span>1k - 10k</div>
+    <div><span class= 'legend-key' style="background-color: yellow"></span>10k - 20k</div>
+    <div><span class = 'legend-key' style="background-color: blue"></span>20k - 50k</div>
+    <div><span class= 'legend-key' style="background-color: red"></span>50k+</div>
+   
+
+    </div>
+    
+</body>
+
+</html>
