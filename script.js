@@ -3,7 +3,7 @@ var regex = /\B(?=(\d{3})+(?!\d))/g // thousand separator
 const limit = 1000; // threshold
 
 // mapbox
-fetch("cities.json").then(
+fetch("data/cities.json").then(
     respone => respone.json()).then(data =>{
 
     const getPopulationSize = size =>{
