@@ -6,10 +6,10 @@ A gis application that displays data of minnesota. You are able to click on a ma
 
 # Map
 
-<img src="images/map.png" width="350">
+<img src="images/map.png" width="400" height="300">
 
 
 
 # Get city information
 
-<img src="images/Popup.png" width="350">
+<img src="images/Popup.png" width="400">
