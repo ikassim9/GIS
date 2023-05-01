@@ -1,6 +1,6 @@
 const bounds = [[-98, 42.5], [-89, 51]];  // minnesota boundary
 const regex = /\B(?=(\d{3})+(?!\d))/g // thousand separator
-const limit = 1000; // threshold
+const limit = 500; // threshold
 const base_url = window.location.href;
 
 
@@ -74,8 +74,6 @@ fetch('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_1_
     const coordinates = data.features.find(feature => feature.properties.postal === 'MN').geometry.coordinates;
 
     map.on('load', () => {
-        console.log('is loaded');
-
         map.addSource('minnesota', {
             'type': 'geojson',
             'data': {
